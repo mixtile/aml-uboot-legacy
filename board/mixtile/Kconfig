@@ -1,0 +1,8 @@
+config MIXTILE_EDGE
+	bool "Support Mixtile EDGE board"
+	default n
+
+
+if MIXTILE_EDGE
+source "board/mixtile/edge/Kconfig"
+endif

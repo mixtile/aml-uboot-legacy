@@ -17,6 +17,7 @@
 
 folder_board="board/amlogic"
 folder_khadas="board/khadas"
+folder_mixtile="board/mixtile"
 customer_folder="customer/board"
 
 echo "************** Amlogic Compile Check Tool **************"
@@ -58,7 +59,7 @@ fi
 
 # if filter==all || filter==khadas, then include khadas configs
 # get all configs name from board folder
-if [ "$1" == "khadas" ] || [ "$1" == "all" ]
+if [ "$1" == "mixtile" ] || [ "$1" == "khadas" ] || [ "$1" == "all" ]
 then
   filter=""
   if [ -e ${khadas_folder} ];then
